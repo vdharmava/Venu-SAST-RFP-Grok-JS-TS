@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vulnerable Social Media</title>
+    <!-- Vuln 26: CWE-829 - Inclusion of Functionality from Untrusted Source -->
+    <script src="http://untrusted.com/script.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Vuln 27: CWE-79 - Cross-Site Scripting (XSS) -->
+    <script>
+        document.write("User: " + location.search.split('user=')[1]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* Vuln 43: CWE-829 - Inclusion of Untrusted Source */
+@import url('http://untrusted.com/styles.css');
+
+/* Vuln 44: CWE-16 - Configuration */
+body {
+    background: url('http://untrusted.com/bg.jpg');
+}
